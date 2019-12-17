@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+  <script> </script>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Food Delivery</title>
   <link rel="stylesheet" href="style.css">
@@ -14,17 +16,23 @@
     <header>
       <img src="img/logo.png" class="logo">
       <div class="search">
-        <p><span>My location:</span> Down Town Brooklyn, str 29, box 14 </p>
-        <input type="search" aria-label="What food you want?">
+        <p><span><i class="fas fa-map-marker-alt"></i> My location:</span> Down Town Brooklyn, str 29, box 14 <i
+            class="fas fa-pencil-alt"></i></p>
+        <div class="search-box-container">
+          <input type="search" placeholder="What food you want?" class="input-header-search">
+          <i class="fas fa-search icon-search"></i>
+        </div>
       </div>
-      <img src="img/Chicken_Marsala_Plate_1024x1024.png" class="img-plate-header">
-      <img src="img/Moroccan_Chicken_Plate_1024x1024.png" class="img-plate-header">
-      <img src="img/pasta-piada-italian-street-food-home-page-38.png" class="img-plate-header">
+      <div class="header-plates">
+        <img src="img/Chicken_Marsala_Plate_1024x1024.png" class="img-plate-header1">
+        <img src="img/Moroccan_Chicken_Plate_1024x1024.png" class="img-plate-header2">
+        <img src="img/pasta-piada-italian-street-food-home-page-38.png" class="img-plate-header3">
+      </div>
       <div class="order">
         <div class="order-resume">
-          <span class="menu-list"></span>
-          <span class="total"></span>
-          <span class="cart"></span>
+          <span class="menu-list">3 dishes</span>
+          <span class="total">$ 56</span>
+          <span class="cart">Cart <i class="fas fa-shopping-cart"></i></span>
         </div>
         <button>ORDER</button>
       </div>
