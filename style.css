@@ -21,3 +21,11 @@
   font-weight: normal;
   src: url('fonts/Proxima\ Nova\ Extrabold.otf');
 }
+
+header {
+  display: flex;
+}
+
+.search {
+
+}
