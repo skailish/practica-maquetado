@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: '3ima Nova';
   font-weight: normal;
   src: url('fonts/Proxima\ Nova\ Regular.otf');
 }
@@ -25,6 +25,7 @@
 body {
   background: rgb(184,9,136);
   background: linear-gradient(90deg, rgba(184,9,136,1) 0%, rgba(142,67,144,1) 100%);
+  font-family: 'Proxima Nova';
 }
 
 .container {
@@ -37,7 +38,6 @@ body {
 /* HEADER */
 
 header {
-  border: 1px solid black;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   background: white;
@@ -46,7 +46,6 @@ header {
   height: 100px;
   display: flex;
   justify-content: space-evenly;
-  font-family: 'Proxima Nova';
 }
 
 .logo { 
@@ -75,7 +74,6 @@ header {
   color: #aaa;
   border-radius: 20px;
   border: 1px solid #ddd;
-  font-family: 'Proxima Nova';
 
 }
 
@@ -127,17 +125,122 @@ header {
   justify-content: space-evenly;
 }
 
-.order button {
+.order button, .section1-addtocart {
   width: 170px;
   margin-top: 10px;
   background: rgb(184,9,136);
   background: linear-gradient(90deg, rgb(65, 53, 202) 0%, rgb(228, 22, 125) 100%);
   color: white;
-  font-family: 'Proxima Nova';
   border: 0;
   height: 30px;
   border-radius: 10px;
 
 }
 
+.section1-container {
+  background: rgb(202, 202, 202);
+  background: linear-gradient(180deg, rgb(223, 223, 223) 0%, rgb(255, 255, 255) 50%, rgb(223, 223, 223) 100%);
+  width: 1100px;
+  height: 400px;
+  position: relative;
+}
 
+.section1-menu {
+  background-color: rgb(55, 54, 92);
+  width: 150px;
+  height: 50px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+  top: 50px;
+  color: white;
+  font-weight: lighter;
+  text-align: right;
+  line-height: 50px;
+  padding-right: 15px;
+}
+
+.section1-plate-img {
+  width: 400px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+.section1-detalles {
+  width: 500px;
+  position: absolute;
+  right: 45px;
+}
+
+.section1-detalles h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+  color: rgb(45, 45, 68);
+}
+
+
+.section1-detalles h2, .section1-detalles p {
+  font-size: 15px;
+  width: 250px;
+  color: rgb(45, 45, 68);
+  margin-top: 0;
+}
+
+.section1-chili {
+  color: rgb(165, 52, 52);
+}
+
+.section1-chiligray {
+  color: rgb(119, 165, 165);
+}
+
+.section1-addtocart {
+  width: 300px;
+  height: 50px;
+  font-weight: bolder;
+}
+
+.section1-ingredientes {
+  display: flex;
+  width: 500px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  box-shadow: 1px 1px 15px #777;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 50px;
+
+}
+
+.section1-ingredientes span {
+  padding-left: 10px;
+  width: 100px;
+}
+
+.section1-ing1, .section1-ing2,.section1-ing3, .section1-ing4, .section1-ing5, .section1-ing6  {
+display: flex;
+width: 120px;
+margin: 10px;
+}
+
+.section1-ingredientes p{
+  display: flex;
+  flex-direction: column;
+}
+
+.section1-ing-icon {
+  color: #6585ab;
+  vertical-align: middle;
+  line-height: 30px;
+  font-size:30px;
+  padding-top: 5px;
+  margin-right: 5px;
+}
+
+.section1-ing-grs {
+  color: darkgray;
+  font-size: 10px;
+  font-size: x-small;
+}
