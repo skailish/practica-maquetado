@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'Proxima Nova', Verdana, Arial, Helvetica, sans-serif;
   font-weight: bold;
   src: url('fonts/Proxima\ Nova\ Bold.otf');
 }
@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-  width:900px;
+  width:1100px;
   padding: 30px
   background-color: white;
   margin: 70px auto;
@@ -42,11 +42,17 @@ header {
   border-top-right-radius: 50px;
   background: white;
   text-align: center;
-  width: 890px;
+  width: 1100px;
   height: 100px;
   display: flex;
   justify-content: space-evenly;
   font-family: 'Proxima Nova';
+}
+
+.logo { 
+  height: 70px;
+  padding: 0;
+  margin: 10px 0;
 }
 
 .search {
@@ -89,20 +95,26 @@ header {
 .header-plates img {
   display: block;
   position: absolute;
-  top:0;
+  width: 50px;
   left: 0;
 }
-.img-plate-header2 {
-  top: 3px;
+
+.img-plate-header1 {
+  top: 8px;
 }
+
+.img-plate-header2 {
+  top: 18px;
+}
+
 .img-plate-header3 {
-  top: 6px;
+  top: 28px;
 }
 
 .order {
   height: 80px;
   background-color: white;
-  box-shadow: rgb(0, 0, 0) 0.2;
+  box-shadow: 1px 1px 10px #ddd;
   border-bottom-left-radius: 10px ;
   border-bottom-right-radius: 10px ;
 }
@@ -116,13 +128,15 @@ header {
 }
 
 .order button {
-  width: 140px;
+  width: 170px;
   margin-top: 10px;
   background: rgb(184,9,136);
-  background: linear-gradient(90deg, rgb(54, 43, 173) 0%, rgba(142,67,144,1) 100%);
+  background: linear-gradient(90deg, rgb(65, 53, 202) 0%, rgb(228, 22, 125) 100%);
+  color: white;
+  font-family: 'Proxima Nova';
   border: 0;
   height: 30px;
-  border-radius: 4px;
+  border-radius: 10px;
 
 }
 
