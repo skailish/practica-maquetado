@@ -1,23 +1,100 @@
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: normal;
+  font-weight: 500;
   src: url('fonts/Proxima\ Nova\ Regular.otf');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: lighter;
+  font-weight: 100;
   src: url('fonts/Proxima\ Nova\ Thin.otf');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: bold;
+  font-weight: 700;
   src: url('fonts/Proxima\ Nova\ Bold.otf');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: normal;
+  font-weight: 900;
   src: url('fonts/Proxima\ Nova\ Extrabold.otf');
+}
+
+html, body {
+  margin: 0;
+  font-family: 'Proxima Nova';
+  font-weight: 100;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu {
+  margin: 30px 0;
+  display: flex;
+ 
+
+}
+
+.sub-menu1 {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+}
+
+.sub-menu1 li {
+  margin-right: 8px;
+  font-size: 15px;
+}
+
+.sub-menu2 {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sub-menu2 li {
+  margin-right: 80px;
+  font-size: 20px;
+}
+
+.big-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.box {
+  width: 18%;
+  box-shadow: 1px 3px 20px rgb(0,0,0,0.2);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 10px;
+  position: relative;
+  padding-top: 45px;
+}
+
+img {
+  width: 100px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: -50px;
+}
+
+
+.button {
+    background-color: #ea3768;
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: auto;
+    bottom: -25px;
 }
