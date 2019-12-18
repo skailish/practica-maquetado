@@ -1,12 +1,12 @@
 @font-face {
-  font-family: '3ima Nova';
-  font-weight: normal;
+  font-family: 'Proxima Nova';
+  font-weight: 500;
   src: url('fonts/Proxima\ Nova\ Regular.otf');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: lighter;
+  font-weight: 100;
   src: url('fonts/Proxima\ Nova\ Thin.otf');
 }
 
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: normal;
+  font-weight: 900;
   src: url('fonts/Proxima\ Nova\ Extrabold.otf');
 }
 
@@ -30,9 +30,14 @@ body {
 
 .container {
   width:1100px;
-  padding: 30px
+  height: 100%;
+  padding-bottom: 150px;
   background-color: white;
   margin: 70px auto;
+  overflow: hidden;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  font-family: 'Proxima Nova';
 }
 
 /* HEADER */
@@ -137,13 +142,17 @@ header {
 
 }
 
+/* SECTION 1 */
+
 .section1-container {
   background: rgb(202, 202, 202);
   background: linear-gradient(180deg, rgb(223, 223, 223) 0%, rgb(255, 255, 255) 50%, rgb(223, 223, 223) 100%);
   width: 1100px;
+  margin: 0;
   height: 400px;
   position: relative;
 }
+
 
 .section1-menu {
   background-color: rgb(55, 54, 92);
@@ -162,9 +171,16 @@ header {
 
 .section1-plate-img {
   width: 400px;
+  padding-top: 60px;
+}
+.img-sec1 {
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
   position: absolute;
-  top: 50px;
+  top: 0px;
   left: 100px;
+  display: block;
 }
 
 .section1-detalles {
@@ -243,4 +259,70 @@ margin: 10px;
   color: darkgray;
   font-size: 10px;
   font-size: x-small;
+}
+
+/* SECTION 2 */
+
+.menu {
+  margin: 30px 0;
+  display: flex;
+}
+
+.sub-menu1 {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+}
+
+.sub-menu1 li {
+  margin-right: 8px;
+  font-size: 15px;
+}
+
+.sub-menu2 {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sub-menu2 li {
+  margin-right: 80px;
+  font-size: 20px;
+}
+
+.big-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.box {
+  width: 18%;
+  box-shadow: 1px 3px 20px rgb(0,0,0,0.2);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 10px;
+  position: relative;
+  padding-top: 45px;
+}
+
+.section2-img {
+  width: 100px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: -50px;
+}
+
+
+.button {
+    background-color: #ea3768;
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: auto;
+    bottom: -25px;
 }
