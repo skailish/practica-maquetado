@@ -38,6 +38,7 @@ body {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   font-family: 'Proxima Nova';
+  color: #737280;
 }
 
 /* HEADER */
@@ -268,6 +269,11 @@ margin: 10px;
   display: flex;
 }
 
+.menu2 {
+  border-bottom: 0.5px solid #d5d3e0;
+
+}
+
 .sub-menu1 {
   display: flex;
   list-style: none;
@@ -277,6 +283,12 @@ margin: 10px;
 .sub-menu1 li {
   margin-right: 8px;
   font-size: 15px;
+}
+
+.number, 
+.ingredients,
+.item {
+  color: #d5d3e0;
 }
 
 .sub-menu2 {
@@ -304,14 +316,26 @@ margin: 10px;
   text-align: center;
   font-size: 10px;
   position: relative;
-  padding-top: 45px;
+  padding-top: 50px;
+  height: 122px;  
 }
 
 .section2-img {
-  width: 100px;
+  width: 120px;
   position: absolute;
-  left: calc(50% - 50px);
-  top: -50px;
+  left: calc(50% - 60px);
+  top: -60px;
+}
+
+.fa-info-circle {
+  font-size: 20px;
+  color: #c4c1d6;
+  position: absolute;
+  left: calc(50% - -72px);
+  top: 8px;
+}
+.price {
+  font-size: 15px;
 }
 
 
@@ -324,5 +348,5 @@ margin: 10px;
     height: 50px;
     position: relative;
     margin: auto;
-    bottom: -25px;
+    bottom: 7px;
 }
